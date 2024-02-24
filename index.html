@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Establecer y Finalizar Sesión Remota en PowerShell</title>
+</head>
+<body>
+    <h1>Establecer y Finalizar Sesión Remota en PowerShell</h1>
+    <p>Para establecer una sesión remota en PowerShell, puedes usar el siguiente código:</p>
+    <pre><code>$session = New-PSSession -ComputerName NombreDelEquipo -Credential (Get-Credential)</code></pre>
+    <p>Este código se utiliza para conectarse a un equipo remoto y ejecutar comandos de PowerShell en él.</p>
+    
+    <p>Para finalizar la sesión remota, puedes usar el siguiente código:</p>
+    <pre><code>Remove-PSSession $session</code></pre>
+    <p>Este código cierra la sesión remota previamente establecida.</p>
+</body>
+</html>
